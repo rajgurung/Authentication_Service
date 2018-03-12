@@ -13,7 +13,7 @@ defmodule AuthenticationService do
       # {Foo.Worker, arg},
       Plug.Adapters.Cowboy.child_spec(:http, AuthenticationService.Router, [], [port: String.to_integer(System.get_env("PORT") || "4000")]),
 
-      supervisor(AuthenticationService.Repo, [])
+      AuthenticationService.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
