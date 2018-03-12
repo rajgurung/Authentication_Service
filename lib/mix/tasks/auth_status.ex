@@ -5,6 +5,6 @@ defmodule Mix.Tasks.AuthStatus do
 
   def run(_) do
     # calling our AuthenticationService.message() function from lib
-    AuthenticationService.message()
+    # AuthenticationService.message()
   end
 end

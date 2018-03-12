@@ -1,7 +1,6 @@
 defmodule ValidateUser do
   import Ecto.Query
-  alias AuthenticationService.User
-  alias AuthenticationService.Repo
+  alias AuthenticationService.{User, Repo}
 
   def test do
     query = from w in User
